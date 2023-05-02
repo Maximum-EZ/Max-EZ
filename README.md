@@ -2,7 +2,7 @@
 
 # About Us
 
-Max-EZ is a website that uses an interstellar proxy to load the site but saves your login info when we change a link if it gets blocked. I will be making an official website layout soon so please dont file a DMCA bubbo! We are currently unblocked by most if not all schools, and have fast loading speeds. Check out our redirector <a href="https://max-ez.pages.dev">here</a>. You can find Interstellars Discord and GitHub below as well as other info! 
+Max-EZ is a website that uses an interstellar proxy to load the site but saves your login info when we change a link if it gets blocked. **I will be making an official website layout soon so please dont file a DMCA bubbo!** We are currently unblocked by most if not all schools, and have fast loading speeds. Check out our redirector <a href="https://max-ez.pages.dev">here</a>. You can find Interstellars Discord and GitHub below as well as other info! 
 
 <a href="https://discord.gg/gointerstellar"><img height="30px" src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white"><img></a>
 <a href="https://github.com/interstellarnetwork"><img height="30px" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"><img></a>
