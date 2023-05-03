@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   if (localStorage.getItem("Classic") === "on") {
-    document.body.style.backgroundColor = "#111";
+    document.body.style.backgroundColor = "#140101";
     document.body.style.color = "#ffffff";
-    document.body.style.setProperty("--bg-c", "#111");
+    document.body.style.setProperty("--bg-c", "#140101");
     document.getElementById("Themes").value = "Classic";
   } else if (localStorage.getItem("Ocean") === "on") {
     document.body.style.backgroundColor = "#162545";
