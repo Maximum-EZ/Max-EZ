@@ -30,7 +30,7 @@ body {
    }
  
    .controlpanel .controls {
-     background: black;
+     background: #140101;
      transform: translateY(-100%);
      transition: 0.2s;
      visibility: hidden;
