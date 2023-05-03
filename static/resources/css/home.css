@@ -147,8 +147,8 @@
 }
 
 .discord-btn:hover{
-    background-color: rgba(0, 0, 0, 0.356);
-    color: rgba(255, 255, 255, 0.534);
+    background-color: #140101;
+    color: #290101;
     scale: 1.1;
 
 }
