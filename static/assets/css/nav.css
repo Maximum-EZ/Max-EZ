@@ -31,7 +31,7 @@ body {
 .header2 a {
   margin: 0;
   float: left;
-  color: black;
+  color: #290101;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -55,7 +55,7 @@ body {
 }
 
 .header2 a.active {
-  background-color: #333;
+  background-color: #290101;
   color: white;
 }
 
