@@ -10,14 +10,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.body.style.setProperty("--bg-c", "#162545");
     document.getElementById("Themes").value = "Ocean";
   } else if (localStorage.getItem("Midnight") === "on") {
-    document.body.style.backgroundColor = "#000";
+    document.body.style.backgroundColor = "#162545";
     document.body.style.color = "#ffffff";
-    document.body.style.setProperty("--bg-c", "#000");
+    document.body.style.setProperty("--bg-c", "#140101");
     document.getElementById("Themes").value = "Midnight";
   } else if (localStorage.getItem("Light") === "on") {
-    document.body.style.backgroundColor = "#fff";
+    document.body.style.backgroundColor = "#162545";
     document.body.style.color = "#000";
-    document.body.style.setProperty("--bg-c", "#fff");
+    document.body.style.setProperty("--bg-c", "#140101");
     document.getElementById("Themes").value = "Light";
   }
 });
