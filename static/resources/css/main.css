@@ -1,6 +1,6 @@
 body {
   margin: 0;
-   background-color: #140101;
+   background-color: #111;
  }
  
  .tip {
@@ -21,7 +21,7 @@ body {
      z-index: 900;
      width: 100%;
      max-width: 500px;
-     color: #140101;
+     color: #222;
      font-family: Roboto;
      align-self: center;
      max-height: 20px;
@@ -30,7 +30,7 @@ body {
    }
  
    .controlpanel .controls {
-     background: #140101;
+     background: black;
      transform: translateY(-100%);
      transition: 0.2s;
      visibility: hidden;
