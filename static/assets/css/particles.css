@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .classic {
-	background: #380303;
+	background: #111;
 	color: white;
 	margin: 0;
-	--bg-c: #380303;
+	--bg-c: #111;
 	overflow: hidden;
 }
 .header {
@@ -16,8 +16,8 @@
 .ocean {
 	margin: 0;
 	color: white;
-	background: #140101;
-	--bg-c: #140101;
+	background: #161923;
+	--bg-c: #161923;
 
 }
 .center {
