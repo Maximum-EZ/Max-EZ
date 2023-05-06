@@ -47,7 +47,7 @@ body {
 }
 
 .header2 a:hover {
-  background-color: black;
+  background-color: #ad1414fa;
   color: white;
   cursor: pointer;
   font-weight: bold;
