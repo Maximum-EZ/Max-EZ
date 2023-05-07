@@ -3,7 +3,7 @@
 	background: #831919;
 	color: white;
 	margin: 0;
-	--bg-c: #911919;
+	--bg-c: #831919;
 	overflow: hidden;
 }
 .header {
@@ -17,7 +17,7 @@
 	margin: 0;
 	color: white;
 	background: #831919;
-	--bg-c: #911919;
+	--bg-c: #831919;
 
 }
 .center {
