@@ -8,7 +8,7 @@
 
 body {
   margin: 0;
-  background-color: #ad141423;
+  background-color: #ff0000;
   font-family: "Inter", sans-serif;
 }
 
@@ -47,7 +47,7 @@ body {
 }
 
 .header2 a:hover {
-  background-color: #ad141418;
+  background-color: #ff0000;
   color: white;
   cursor: pointer;
   font-weight: bold;
@@ -55,7 +55,7 @@ body {
 }
 
 .header2 a.active {
-  background-color: #ad141423;
+  background-color: #ff0000;
   color: white;
 }
 
