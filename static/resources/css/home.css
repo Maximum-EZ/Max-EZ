@@ -253,8 +253,8 @@
   }
   
   .popupbutton {
-    background-color: #831919;
-    color: black;
+    background-color: white;
+    color: #831919;
     border: 2px solid #555555;
     flex-grow: 1;
     padding: 0 7px;
