@@ -254,7 +254,7 @@
   
   .popupbutton {
     background-color: white;
-    color: #831919;
+    color: black;
     border: 2px solid #555555;
     flex-grow: 1;
     padding: 0 7px;
@@ -271,7 +271,7 @@
   }
   
   .popupbutton:hover {
-    background-color: #000;
+    background-color: #831919;
     color: white;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
       0 17px 50px 0 rgba(0, 0, 0, 0.19);
