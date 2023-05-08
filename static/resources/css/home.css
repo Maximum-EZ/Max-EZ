@@ -185,7 +185,7 @@
     max-width: 395px;
   }
   #cookieNotice.light {
-    background-color: #222;
+    background-color: #911919;
     color: #fff;
   }
   #cookieNotice {
@@ -196,7 +196,7 @@
     box-shadow: 0 6px 6px rgb(0 0 0 / 25%);
     font-family: inherit;
     z-index: 999997;
-    color: #911919;
+    color: #111;
   }
   #cookieNotice #closeIcon {
     width: 20px;
