@@ -2,27 +2,43 @@
 <html lang="en">
   <head>
     <title>Classes</title>
+    
+    <!-- Set website favicon -->
     <link href="assets/images/branding/favicon/favicon.png" rel="icon" type="image/x-icon" />
+    
+    <!-- Set website description for search engine optimization -->
     <meta name="description" content="Explore the most beautiful oceans in the world! One website, inspiring others to do better."/>
-    <!-- Main Scripts-->
+    
+    <!-- Main Scripts -->
     <script src="resources/js/index.js"></script>
     <script src="./uv/uv.bundle.js"></script>
     <script src="./uv/uv.config.js"></script>
     <script src="resources/js/visit.js"></script>
     <script src="resources/js/go.js"></script>
+    
+    <!-- Set website stylesheet -->
     <link href="assets/css/particles.css" rel="stylesheet">
     <link rel="stylesheet" href="resources/css/main.css"/>
-    <!-- Extra Scripts-->
+    
+    <!-- Extra Scripts -->
     <script src="assets/js/search.js"></script>
+    
+    <!-- Set additional website stylesheets -->
     <link href="assets/css/settings/main.css" rel="stylesheet" />
     <link href="assets/css/nav.css" rel="stylesheet" />
     <link href="assets/css/apps.css" rel="stylesheet" />
     <link href="assets/css/searchbar.css" rel="stylesheet" />
+    
+    <!-- Set website description for search engine optimization -->
     <meta content="The best math tutoring!" name="description" />
+    
+    <!-- Set website favicon -->
     <link href="assets/images/branding/favicon/interstellar.png" rel="shortcut icon" type="image/x-icon" />
   </head>
+  
   <body>
-     <!-- Nav Bar Start-->
+  
+     <!-- Navigation bar -->
      <div class="header2">
       <br>
       <a href="/../" class="logo">Max-EZ</a>
@@ -35,27 +51,27 @@
     <br>
     <br>
     <br>
-    <!-- Nav Bar End-->
+    
+    <!-- Search bar -->
     <br>
     <div>
       <input class="searchbar" id="searchbar" name="search" onkeyup="search_animal()" placeholder="Search.." tag="searchbar" type="text" />
     </div>
     <script>
+      // Change the size of the search bar based on its content
       const searchbar = document.getElementById("searchbar");
       searchbar.addEventListener("input", function() {
         if (searchbar.value === '') {
-          // Code to execute if input field is empty
           searchbar.style.width = "25%";
           searchbar.style.height = "60px";
         } else {
-          // Code to execute if input field is not empty
           searchbar.style.width = "70%";
           searchbar.style.height = "60px";
         }
       });
     </script>
-   <!-- Advertisement Start-->
-   <!-- Advertisement End-->
+   
+   <!-- Cards section with links to external websites -->
    <br>
     <div class="row">
       <div class="span1">
