@@ -3,6 +3,7 @@
 <head>
   <title>Button Website</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="resources/js/main.js"></script>   
 </head>
 <body>
   <div class="container">
@@ -28,6 +29,15 @@
     </div>
   </div>
 
+  <script>
+    if (localStorage.getItem('cloak')) {
+      const cloakValue = localStorage.getItem('cloak') === 'true' ? 'true' : 'false';
+      const squareElements = document.getElementsByClassName('square');
+      for (let i = 0; i < squareElements.length; i++) {
+        squareElements[i].style.display = cloakValue === 'true' ? 'none' : 'block';
+      }
+    }
+  </script>
   <script src="index.js"></script>
 </body>
 </html>
