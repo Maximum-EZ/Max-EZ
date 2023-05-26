@@ -1,31 +1,96 @@
-/* Add these styles to the existing stylesheet */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
-/* Center the search bar */
-.searchbar {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
+html {
+  margin: 20px 10px;
   border-radius: 20px;
-  width: 300px;
+  font-weight: 700;
+  border: 2px solid var(--textcolor);
+  background: 0 0;
+  color: var(--textcolor);
+  cursor: default;
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transition: all 0.5s ease;
+  height: 150px;
+  background-color: transparent;
 }
 
-/* Set up the grid layout for the apps */
+body {
+  background-color: #831919;
+}
+
 .row {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 20px;
-  justify-items: center;
-}
-
-/* Center the app cards within the grid */
-.span1 {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  font-family: "Inter", sans-serif;
+  margin: 0 auto;
+  max-width: 900px;
 }
 
-/* Round the edges of the app cards */
 .card {
-  border-radius: 10px;
-  width: 80px;
-  height: 80px;
+  transition: 0.2s;
+  width: 150px;
+  height: 170px;
+  background-color: transparent;
+  margin: 15px;
+  transition: 0.2s;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.card img {
+  height: auto;
+  max-height: 145px;
+  width: 145px;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+  border-radius: 25px;
+  max-height: 145px;
+  max-width: 145px;
+  overflow: hidden;
+}
+
+h2 {
+  color: var(--textcolor);
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  display: inline-block;
+}
+
+.random-btn {
+  text-align: center;
+  margin-top: 10px;
+  width: 200px;
+  height: 40px;
+  background-color: rgba(59, 56, 56, 0.356);
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1em;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.random-btn:hover {
+  text-align: center;
+  background-color: rgba(59, 56, 56, 0.356);
+  color: rgba(0, 0, 0, 0.534);
+  transform: scale(1.1);
 }
