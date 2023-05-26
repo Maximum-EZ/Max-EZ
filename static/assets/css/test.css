@@ -6,12 +6,13 @@
   margin: 0 auto;
   text-align: center;
   border-radius: 20px;
+  width: 300px;
 }
 
 /* Set up the grid layout for the apps */
 .row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 20px;
   justify-items: center;
 }
@@ -24,5 +25,7 @@
 
 /* Round the edges of the app cards */
 .card {
-  border-radius: 25px;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
 }
