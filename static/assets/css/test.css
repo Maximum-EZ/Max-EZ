@@ -1,72 +1,28 @@
-/* Styles for navigation bar */
-.header2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: #333;
-  color: white;
-}
+/* Add these styles to the existing stylesheet */
 
-.logo {
-  font-size: 24px;
-  color: white;
-  text-decoration: none;
-}
-
-.header2-right {
-  display: flex;
-}
-
-.header2-right a {
-  color: white;
-  margin-left: 10px;
-  text-decoration: none;
-}
-
-/* Styles for search bar */
+/* Center the search bar */
 .searchbar {
-  width: 25%;
-  height: 60px;
-  font-size: 20px;
-  padding: 10px;
-  margin: 10px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 20px;
 }
 
-/* Styles for cards */
+/* Set up the grid layout for the apps */
 .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Center the app cards within the grid */
+.span1 {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
 }
 
-.span1 {
-  width: 100%;
-  max-width: 300px;
-  padding: 10px;
-}
-
+/* Round the edges of the app cards */
 .card {
-  background-color: #f4f4f4;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.card a {
-  display: block;
-  text-decoration: none;
-}
-
-.card img {
-  width: 100%;
-  max-width: 150px;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.card p3 {
-  font-size: 18px;
-  margin-bottom: 0;
+  border-radius: 25px;
 }
