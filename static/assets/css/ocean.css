@@ -51,7 +51,7 @@ html {
   font-weight: 700;
   border: 2px solid var(--textcolor);
   background: 0 0;
-  color: var(--textcolor);
+  color: white; /* Updated color to white */
   cursor: default;
   position: relative;
   overflow-y: scroll;
@@ -87,7 +87,7 @@ button:hover {
 }
 
 h2 {
-  color: var(--textcolor);
+  color: white; /* Updated color to white */
   text-align: center;
   align-self: center;
   align-content: center;
