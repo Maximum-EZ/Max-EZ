@@ -53,4 +53,5 @@ body {
 .branding {
   color: white;
   text-align: center;
+  margin-top: 20px; /* Adjust this value to control the spacing between buttons and branding */
 }
