@@ -10,6 +10,7 @@
   transform: scale(1.2);
   overflow: hidden;
   transition: 0.2s;
+  box-shadow: 0 0 10px white; /* Add white glow effect */
 }
 
 img {
@@ -35,6 +36,7 @@ img {
   cursor: pointer;
   height: 170px;
 }
+
 .game-img {
   width: 150px;
   height: 150px;
@@ -42,6 +44,7 @@ img {
   transition: 0.2s;
   cursor: pointer;
 }
+
 html {
   margin-left: 25%;
   margin-right: 25%;
@@ -77,6 +80,10 @@ html {
   height: 150px;
 }
 
+.imagebutton:hover {
+  box-shadow: 0 0 10px white; /* Add white glow effect */
+}
+
 button:hover {
   -webkit-transition: scale(1.1);
   -ms-transform: scale(1.2);
@@ -97,6 +104,7 @@ h2 {
 body {
   background-color: black;
 }
+
 .random-btn {
   text-align: center;
   margin-top: 10px;
@@ -139,6 +147,7 @@ body {
   border: none;
   outline: none;
 }
+
 ::placeholder {
   color: white;
   opacity: 1;
