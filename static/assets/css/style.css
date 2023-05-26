@@ -55,4 +55,5 @@ body {
   color: white;
   text-align: center;
   margin-top: 20px; /* Adjust this value to control the spacing between branding and buttons */
+  font-size: 36px; /* Adjust this value to change the font size of the branding text */
 }
