@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+/* Header Styles */
+.header2 {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+.header2 a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.header2 .logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* Search Bar Styles */
+.searchbar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#searchbar {
+  background-color: gray;
+  color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  width: 25%;
+  transition: all 0.4s ease-in-out;
+  height: 60px;
+  border: none;
+  outline: none;
+}
+
+#searchbar::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+#searchbar:focus {
+  width: 70%;
+}
+
