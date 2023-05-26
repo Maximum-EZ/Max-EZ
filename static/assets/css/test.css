@@ -12,7 +12,7 @@
 /* Set up the grid layout for the apps */
 .row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(8, 1fr);
   gap: 20px;
   justify-items: center;
 }
@@ -26,6 +26,6 @@
 /* Round the edges of the app cards */
 .card {
   border-radius: 10px;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
