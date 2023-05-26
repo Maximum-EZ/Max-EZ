@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
+/* Body Styles */
+body {
+  background-color: black;
+}
+
 /* Header Styles */
 .header2 {
   background-color: #000;
@@ -48,4 +53,3 @@
 #searchbar:focus {
   width: 70%;
 }
-
