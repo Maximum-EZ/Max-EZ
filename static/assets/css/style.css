@@ -13,7 +13,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 100px;
+  margin-top: 20px; /* Adjust this value to control the spacing between branding and buttons */
 }
 
 .square {
