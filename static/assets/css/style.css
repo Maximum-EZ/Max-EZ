@@ -13,7 +13,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 20px; /* Adjust this value to control the spacing between branding and buttons */
+  margin-top: 100px;
 }
 
 .square {
@@ -54,6 +54,6 @@ body {
 .branding {
   color: white;
   text-align: center;
-  margin-top: 20px; /* Adjust this value to control the spacing between branding and buttons */
-  font-size: 36px; /* Adjust this value to change the font size of the branding text */
+  margin-top: 20px;
+  font-size: 36px;
 }
