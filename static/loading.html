@@ -1,23 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Sets the viewport for responsive design -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Links to the Google Fonts API -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <!-- Adds a description of the page for SEO purposes -->
-  <meta name="description" content="From studio portraits to epic alpine landscapes, browse the best photography, retouching and photojournalism today."/>
-
-  <!-- Links to the Google Fonts used on the page -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&display=swap" rel="stylesheet">
-
-  <!-- Defines the CSS styling for the page -->
   <style>
+
     body {
-      background-color: black; /* Updated background color */
+      background-color: #1c1c1c;
       font-family: 'Roboto', sans-serif;
       margin: 0;
       display: flex;
@@ -28,7 +15,7 @@
     }
 
     a {
-      color: #ffffff;
+      color: #fff;
       text-decoration: none;
       transition: color 0.3s ease-in-out;
     }
@@ -52,7 +39,6 @@
       0% {
         transform: rotate(0deg);
       }
-
       100% {
         transform: rotate(360deg);
       }
@@ -73,6 +59,12 @@
       margin-top: 20px;
     }
 
+    .discord-link {
+      color: #3498db;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
     .animate-bottom {
       animation-name: animatebottom;
       animation-duration: 1s;
@@ -81,26 +73,23 @@
     @keyframes animatebottom {
       from {
         bottom: -100px;
-        opacity: 0;
+        opacity: 0
       }
-
       to {
         bottom: 0;
-        opacity: 1;
+        opacity: 1
       }
     }
   </style>
 </head>
+
 <body>
-
-  <!-- Adds a spinning animation to indicate the page is loading -->
   <div id="loader"></div>
-
-  <!-- Displays a message to the user while the page is loading -->
   <div class="message animate-bottom">
     <p class="description">
-      Please wait a moment. Our servers may be under high load causing some slowness.
+      Please wait a moment. Our servers may be under high load causing some slowness.<br>If you have any issues, please <a class="discord-link" href="https://discord.gg/gointerstellar" target="_blank">join our Discord server</a>.
     </p>
   </div>
 </body>
+
 </html>
