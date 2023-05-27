@@ -1,22 +1,12 @@
-<!--
-The following code defines the HTML structure and styling for a 
-page with websites in a row, a message, and a description. 
-The code has been formatted to improve readability and organization, 
-and comments have been added to explain the purpose of certain elements. 
-  - LiamSirBean
--->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Classes</title>
     
-    <!-- Set website favicon -->
     <link href="assets/images/branding/favicon/favicon.png" rel="icon" type="image/x-icon" />
     
-    <!-- Set website description for search engine optimization -->
     <meta name="description" content="Explore the most beautiful oceans in the world! One website, inspiring others to do better."/>
     
-    <!-- Main Scripts -->
     <script src="assets/js/index.js"></script>
     <script src="./uv/uv.bundle.js"></script>
     <script src="./uv/uv.config.js"></script>
@@ -24,25 +14,20 @@ and comments have been added to explain the purpose of certain elements.
     <script src="assets/js/go.js"></script>
     <script src="assets/js/search.js"></script>
     
-    <!-- Set website stylesheet -->
     <link href="assets/css/ocean.css" rel="stylesheet">
     
-    <!-- Set website description for search engine optimization -->
     <meta content="The best math tutoring!" name="description" />
     
-    <!-- Set website favicon -->
     <link href="assets/images/branding/favicon/interstellar.png" rel="shortcut icon" type="image/x-icon" />
   </head>
   
   <body>
     
-    <!-- Search bar -->
     <br>
     <div>
       <input class="searchbar" id="searchbar" name="search" onkeyup="search_animal()" placeholder="Search.." tag="searchbar" type="text" />
     </div>
     <script>
-      // Change the size of the search bar based on its content
       const searchbar = document.getElementById("searchbar");
       searchbar.addEventListener("input", function() {
         if (searchbar.value === '') {
@@ -55,7 +40,6 @@ and comments have been added to explain the purpose of certain elements.
       });
     </script>
    
-   <!-- Cards section with links to external websites -->
    <br>
     <div class="row">
       <div class="span1">

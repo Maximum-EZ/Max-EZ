@@ -12,14 +12,17 @@
             padding: 0;
             box-sizing: border-box;
         }
+        
         html, body {
             height: 100%;
             font-family: 'Lato', sans-serif;
             color: black;
         }
+        
         body {
             background-color: #f7f7f7;
         }
+        
         .container {
             display: flex;
             flex-direction: column;
@@ -33,23 +36,27 @@
             background-position: center;
             background-attachment: fixed;
         }
+        
         h1 {
             font-size: 5rem;
             margin-bottom: 2rem;
             text-shadow: 0 2px 2px rgba(0,0,0,0.3);
             color:white;
         }
+        
         p {
             font-size: 1.5rem;
             margin-bottom: 2rem;
             color: white;
         }
+        
         .button-group {
             display: flex;
             justify-content: center;
             gap: 1rem;
             margin-top: 2rem;
         }
+        
         button {
             background-color: #333;
             color: #fff;
@@ -61,28 +68,33 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.3);
             transition: all 0.3s ease-in-out;
         }
+        
         button:hover {
             background-color: #000;
             transform: translateY(-2px);
         }
+        
         button:active {
             transform: translateY(0);
             box-shadow: none;
         }
+        
         @media screen and (max-width: 768px) {
             h1 {
                 font-size: 3rem;
             }
+            
             p {
                 font-size: 1rem;
             }
+            
             button {
                 font-size: 1rem;
                 padding: 0.5rem 1rem;
             }
         }
     </style>
-      <script src="assets/js/panic.js"></script>
+    <script src="assets/js/panic.js"></script>
 </head>
 <body>
     <div class="container">
@@ -93,7 +105,6 @@
             <button onclick="location.href='/';">Go back home</button>
             <button onclick="window.open('https://support.google.com/accounts/answer/32050', '_blank');">How to clear your cache.</button>
             <button onclick="window.open('https://forms.gle/PmYG2crJGaYCiWmN9', '_blank');">Report this issue</button>
-            
         </div>
     </div>
 </body>

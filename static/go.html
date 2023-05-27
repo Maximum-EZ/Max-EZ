@@ -8,7 +8,6 @@
   <style>
     .tip {
       width: calc(100% - 37%);
-      /* left: 0; */
       right: 0;
       bottom: 15px;
       margin: 0 auto;
@@ -147,7 +146,6 @@
   <script>
     window.onload = function() {
       let encodedUrl = sessionStorage.getItem("encodedUrl");
-      // add the prefix "/service/" to the encoded URL
       encodedUrl = "/service/" + encodedUrl;
       document.querySelector("#iframeId").src = encodedUrl;
     };

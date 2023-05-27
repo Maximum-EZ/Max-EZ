@@ -1,9 +1,9 @@
 body {
   background-color: black;
   display: flex;
-  flex-direction: column; /* Display flex items vertically */
+  flex-direction: column;
   justify-content: center;
-  align-items: center; /* Center align items horizontally */
+  align-items: center; 
   height: 100vh;
   margin: 0;
 }
