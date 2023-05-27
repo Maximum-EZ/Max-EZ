@@ -116,8 +116,9 @@
           <input style="font-size: 24px" enabled="disabled" value="" />
         </form>
         <button class="button Fullscreen" id="fullscreen-button" style="margin-right: 5px"> Fullscreen </button>
-        <a href="/service/loading.html" class="button Home" id="home-button">Home</a>
+        <button class="button Home" id="home-button">Home</button>
       </div>
+      <!--button class="toggle">expand_more</button-->
     </div>
     <script>
       const homeButton = document.getElementById("home-button");
@@ -136,4 +137,16 @@
       });
     </script>
   </body>
+  <html>
+    <iframe src="/loading.html" id="iframeId" style="bottom: 0" style="border: 0px #ffffff none" name="Iframe" scrolling="yes" frameborder="0" marginheight="0px" marginwidth="0px" height="100%" width="100%" allowfullscreen></iframe>
+    <script>
+      window.onload = function() {
+        let encodedUrl = sessionStorage.getItem("encodedUrl");
+        // add the prefix "/service/" to the encoded URL
+        encodedUrl = "/service/" + encodedUrl;
+        document.querySelector("#iframeid").src = encodedUrl;
+      };
+    </script>
+    
+  </html>
 </html>
