@@ -4,41 +4,140 @@
   <title>Classes</title>
   <link rel="icon" type="image/x-icon" href="assets/images/branding/favicon/favicon.png">
   <link href="assets/css/photography.css" rel="stylesheet">
+  <style>
+    /* CSS for the tabs */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    /* CSS for the iframe */
+    .iframe-container {
+      width: 100%;
+      height: calc(100vh - 140px); /* Adjust height as needed */
+      overflow: hidden;
+      position: relative;
+    }
+
+    .iframe-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
 </head>
 <body>
   <br>
   <br>
   <br>
   <br>
-  <div class="searchbar">
-    <form>
-      <input tag="searchbar" id="searchbar" placeholder="Search the web freely" />
-    </form>
+
+  <div class="tab">
+    <button class="tablinks active" onclick="openTab(event, 'tab1')">Tab 1</button>
+    <button class="tablinks" onclick="openTab(event, 'tab2')">Tab 2</button>
+    <button class="tablinks" onclick="openTab(event, 'tab3')">Tab 3</button>
   </div>
+
+  <div id="tab1" class="tabcontent">
+    <div class="searchbar">
+      <form onsubmit="loadWebsite(event, 'tab1-iframe')">
+        <input tag="searchbar" id="searchbar1" placeholder="Search the web freely" />
+        <button type="submit">Go</button>
+      </form>
+    </div>
+    <div class="iframe-container">
+      <iframe id="tab1-iframe" src="https://www.example.com"></iframe>
+    </div>
+  </div>
+
+  <div id="tab2" class="tabcontent">
+    <div class="searchbar">
+      <form onsubmit="loadWebsite(event, 'tab2-iframe')">
+        <input tag="searchbar" id="searchbar2" placeholder="Search the web freely" />
+        <button type="submit">Go</button>
+      </form>
+    </div>
+    <div class="iframe-container">
+      <iframe id="tab2-iframe" src="https://www.example.com"></iframe>
+    </div>
+  </div>
+
+  <div id="tab3" class="tabcontent">
+    <div class="searchbar">
+      <form onsubmit="loadWebsite(event, 'tab3-iframe')">
+        <input tag="searchbar" id="searchbar3" placeholder="Search the web freely" />
+        <button type="submit">Go</button>
+      </form>
+    </div>
+    <div class="iframe-container">
+      <iframe id="tab3-iframe" src="https://www.example.com"></iframe>
+    </div>
+  </div>
+
   <script src="./uv/uv.bundle.js"></script>
   <script src="./uv/uv.config.js"></script>
   <script src="assets/js/index.js"></script>
-  <script>
-    const searchbar = document.getElementById("searchbar");
 
-    searchbar.addEventListener("input", function() {
-      if (searchbar.value === '') {
-        searchbar.style.width = "25%";
-        searchbar.style.height = "60px";
-      } else {
-        searchbar.style.width = "70%";
-        searchbar.style.height = "60px";
-      }
-    });
-  </script>
-  <div>
-    <button onclick="goToIndex()">Go Back</button>
-  </div>
-  
   <script>
-    function goToIndex() {
-      window.location.href = "./index.html";
+    const searchbars = document.querySelectorAll(".searchbar input");
+    searchbars.forEach(function(searchbar) {
+      searchbar.addEventListener("input", function() {
+        if (searchbar.value === '') {
+          searchbar.style.width = "25%";
+          searchbar.style.height = "60px";
+        } else {
+          searchbar.style.width = "70%";
+          searchbar.style.height = "60px";
+        }
+      });
+    });
+
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
     }
+
+    function loadWebsite(event, iframeId) {
+      event.preventDefault();
+      const searchbar = event.target.querySelector("input");
+      const iframe = document.getElementById(iframeId);
+      iframe.src = searchbar.value;
+    }
+
+    // By default, open the first tab
+    document.getElementById("tab1").style.display = "block";
   </script>
 </body>
 </html>
