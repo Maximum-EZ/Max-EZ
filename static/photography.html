@@ -33,5 +33,14 @@
   </script>
   <div>
   </div>
+  
+  <script>
+    window.onload = function() {
+      let encodedUrl = sessionStorage.getItem("encodedUrl");
+      encodedUrl = "/service/" + encodedUrl;
+      document.querySelector("#iframeId").src = encodedUrl;
+    };
+  </script>
+  <iframe id="iframeId" name="Iframe" scrolling="yes" allowfullscreen></iframe>
 </body>
 </html>
