@@ -49,7 +49,7 @@ async function __uvHook(window, config = {}, bare = '/bare/') {
     __uv.meta.origin = location.origin;
     __uv.location = client.location.emulate(
         (href) => {
-            if (href === 'about:srcdoc') return new URL(href);
+            if (href === '') return new URL(href);
             if (href.startsWith('blob:')) href = href.slice('blob:'.length);
             return new URL(__uv.sourceUrl(href));
         },
