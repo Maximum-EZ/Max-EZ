@@ -10,75 +10,35 @@
   <br>
   <br>
   <br>
-  
-  <div class="tab">
-    <button class="tablinks" onclick="openTab(event, 'tab1')">Tab 1</button>
-    <button class="tablinks" onclick="openTab(event, 'tab2')">Tab 2</button>
-    <button class="tablinks" onclick="openTab(event, 'tab3')">Tab 3</button>
+  <div class="searchbar">
+    <form>
+      <input tag="searchbar" id="searchbar" placeholder="Search the web freely" />
+    </form>
   </div>
-  
-  <div id="tab1" class="tabcontent">
-    <div class="searchbar">
-      <form>
-        <input tag="searchbar" id="searchbar1" placeholder="Search the web freely" />
-      </form>
-    </div>
-  </div>
-  
-  <div id="tab2" class="tabcontent">
-    <div class="searchbar">
-      <form>
-        <input tag="searchbar" id="searchbar2" placeholder="Search the web freely" />
-      </form>
-    </div>
-  </div>
-  
-  <div id="tab3" class="tabcontent">
-    <div class="searchbar">
-      <form>
-        <input tag="searchbar" id="searchbar3" placeholder="Search the web freely" />
-      </form>
-    </div>
-  </div>
-  
   <script src="./uv/uv.bundle.js"></script>
   <script src="./uv/uv.config.js"></script>
   <script src="assets/js/index.js"></script>
+  <script>
+    const searchbar = document.getElementById("searchbar");
+
+    searchbar.addEventListener("input", function() {
+      if (searchbar.value === '') {
+        searchbar.style.width = "25%";
+        searchbar.style.height = "60px";
+      } else {
+        searchbar.style.width = "70%";
+        searchbar.style.height = "60px";
+      }
+    });
+  </script>
+  <div>
+    <button onclick="goToIndex()">Go Back</button>
+  </div>
   
   <script>
-    const searchbars = document.querySelectorAll(".searchbar input");
-    searchbars.forEach(function(searchbar) {
-      searchbar.addEventListener("input", function() {
-        if (searchbar.value === '') {
-          searchbar.style.width = "25%";
-          searchbar.style.height = "60px";
-        } else {
-          searchbar.style.width = "70%";
-          searchbar.style.height = "60px";
-        }
-      });
-    });
-    
-    function openTab(evt, tabName) {
-      var i, tabcontent, tablinks;
-      
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      
-      document.getElementById(tabName).style.display = "block";
-      evt.currentTarget.className += " active";
+    function goToIndex() {
+      window.location.href = "./index.html";
     }
-    
-    // By default, open the first tab
-    document.getElementById("tab1").style.display = "block";
-    document.getElementsByClassName("tablinks")[0].className += " active";
   </script>
 </body>
 </html>
