@@ -17,7 +17,7 @@
   <br>
   <br>
   <div class="searchbar">
-    <form>
+    <form id="searchForm">
       <input tag="searchbar" id="searchbar" placeholder="Search the web freely" />
     </form>
   </div>
@@ -25,7 +25,17 @@
   <script src="./uv/uv.config.js"></script>
   <script src="assets/js/index.js"></script>
   <script>
+    const searchForm = document.getElementById("searchForm");
     const searchbar = document.getElementById("searchbar");
+
+    searchForm.addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent the form submission
+
+      // Perform your desired search functionality here
+
+      // Optional: Clear the search bar input value
+      searchbar.value = '';
+    });
 
     searchbar.addEventListener("input", function() {
       if (searchbar.value === '') {
