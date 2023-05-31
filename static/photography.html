@@ -150,37 +150,6 @@
       <button class="button Home" id="home-button">Home</button>
     </div>
   </div>
-  <script>
-    const homeButton = document.getElementById("home-button");
-    homeButton.addEventListener("click", function() {
-      window.location.href = "./";
-    });
-
-    const fullscreenButton = document.getElementById("fullscreen-button");
-    fullscreenButton.addEventListener("click", function() {
-      if (!document.fullscreenElement) {
-        document.documentElement.requestFullscreen();
-      } else {
-        document.exitFullscreen();
-      }
-    });
-  </script>
-  <script>
-    window.onload = function() {
-      let encodedUrl = sessionStorage.getItem("encodedUrl");
-      encodedUrl = "/service/" + encodedUrl;
-      document.querySelector("#iframeId").src = encodedUrl;
-    };
-  </script>
   <iframe src="/loading.html" id="iframeId" name="Iframe" scrolling="yes" allowfullscreen></iframe>
-  <div>
-    <button onclick="goToIndex()">Go Back</button>
-  </div>
-
-  <script>
-    function goToIndex() {
-      window.location.href = "./index.html";
-    }
-  </script>
 </body>
 </html>
