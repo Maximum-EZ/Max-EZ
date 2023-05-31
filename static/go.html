@@ -33,59 +33,32 @@
       background-color: #ddd;
     }
 
-    #searchbar1,
-    #searchbar2 {
-      width: 100%;
-      height: 40px;
-      margin-top: 8px;
-      font-size: 16px;
-      padding: 8px;
-      border: none;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .iframe-container {
-      position: relative;
-      overflow: hidden;
-      padding-top: 56.25%; /* 16:9 Aspect Ratio */
-    }
-
-    .responsive-iframe {
-      position: absolute;
+    #iframeId {
+      position: fixed;
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
+      height: calc(100% - 40px);
       border: none;
     }
   </style>
 </head>
 <body>
-  <div class="tab-container">
+  <div>
     <button class="tab" onclick="openTab(event, 'tab1')">Tab 1</button>
     <button class="tab" onclick="openTab(event, 'tab2')">Tab 2</button>
   </div>
-  
-  <div id="tab1" class="tabcontent">
-    <form onsubmit="loadWebsite(event, 'iframe1')">
-      <input type="text" id="searchbar1" placeholder="Search in Tab 1">
-    </form>
-    <div class="iframe-container">
-      <iframe id="iframe1" class="responsive-iframe"></iframe>
-    </div>
+
+  <div id="tab1" class="tabcontent" style="display: block;">
+    <iframe src="https://www.google.com" id="iframeId" name="Iframe" scrolling="yes"></iframe>
   </div>
 
   <div id="tab2" class="tabcontent">
-    <form onsubmit="loadWebsite(event, 'iframe2')">
-      <input type="text" id="searchbar2" placeholder="Search in Tab 2">
-    </form>
-    <div class="iframe-container">
-      <iframe id="iframe2" class="responsive-iframe"></iframe>
-    </div>
+    <iframe src="https://www.bing.com" id="iframeId" name="Iframe" scrolling="yes"></iframe>
   </div>
 
   <script>
-    function openTab(evt, tabName) {
+    function openTab(event, tabName) {
       var i, tabcontent, tablinks;
 
       tabcontent = document.getElementsByClassName("tabcontent");
@@ -99,16 +72,7 @@
       }
 
       document.getElementById(tabName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-
-    function loadWebsite(event, iframeId) {
-      event.preventDefault();
-      var searchbarId = event.target.querySelector("input").id;
-      var url = document.getElementById(searchbarId).value;
-      var encodedUrl = encodeURIComponent(url);
-      var iframe = document.getElementById(iframeId);
-      iframe.src = "https://www.google.com/search?q=" + encodedUrl;
+      event.currentTarget.className += " active";
     }
   </script>
 </body>
