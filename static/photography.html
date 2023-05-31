@@ -1,37 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="margin: 0">
 <head>
   <title>Classes</title>
-  <link rel="icon" type="image/x-icon" href="assets/images/branding/favicon/favicon.png">
-  <link href="assets/css/photography.css" rel="stylesheet">
+  <meta name="description" content="From studio portraits to epic alpine landscapes, browse the best photography, retouching and photojournalism today."/>
+  <link rel="icon" type="image/x-icon" href="assets/images/branding/favicon/favicon.png" />
+  <link rel="shortcut icon" href="assets/images/branding/favicon/favicon.png" type="image/x-icon" />
+  <style>
+    /* CSS styles omitted for brevity */
+  </style>
 </head>
 <body>
-  <br>
-  <br>
-  <br>
-  <br>
-  <div class="searchbar">
-    <form>
-      <input tag="searchbar" id="searchbar" placeholder="Search the web freely" />
-    </form>
+  <!-- HTML code omitted for brevity -->
+  
+  <!-- Add a search bar in the control panel -->
+  <div class="controlpanel">
+    <div class="controls">
+      <img class="icon" src="/assets/images/branding/favicon/interstellar.ico" />
+      <form id="search-form">
+        <input id="search-input" type="text" placeholder="Search">
+        <button id="search-button" type="submit">Search</button>
+      </form>
+      <button class="button Fullscreen" id="fullscreen-button" style="margin-right: 5px">Fullscreen</button>
+      <button class="button Home" id="home-button">Home</button>
+    </div>
   </div>
-  <script src="./uv/uv.bundle.js"></script>
-  <script src="./uv/uv.config.js"></script>
-  <script src="assets/js/index.js"></script>
+  
+  <!-- JavaScript code for search functionality -->
   <script>
-    const searchbar = document.getElementById("searchbar");
-
-    searchbar.addEventListener("input", function() {
-      if (searchbar.value === '') {
-        searchbar.style.width = "25%";
-        searchbar.style.height = "60px";
-      } else {
-        searchbar.style.width = "70%";
-        searchbar.style.height = "60px";
+    const searchForm = document.getElementById("search-form");
+    const searchInput = document.getElementById("search-input");
+    
+    searchForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+      
+      const searchQuery = searchInput.value.trim();
+      
+      if (searchQuery !== "") {
+        // Perform the search or redirect to the search results page
+        window.location.href = "/search?q=" + encodeURIComponent(searchQuery);
       }
     });
   </script>
-  <div>
-  </div>
+  
+  <!-- JavaScript code omitted for brevity -->
+  
+  <iframe src="/loading.html" id="iframeId" name="Iframe" scrolling="yes" allowfullscreen></iframe>
 </body>
 </html>
