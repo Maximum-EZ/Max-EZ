@@ -1,83 +1,73 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-
-    <title>Rammerhead Proxy</title>
+  <title>Classes</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/branding/favicon/favicon.png">
+  <link href="assets/css/photography.css" rel="stylesheet">
+  <style>
+    /* Add any additional styles as needed */
+  </style>
 </head>
-
 <body>
-    <header>
-        <img src="logo.png" />
-        <h1>Rammerhead Proxy</h1>
-    </header>
-    <div class="container mb-5">
-        <p class="mt-3 mb-3 font-weight">Join the <a href="https://discord.gg/VNT4E7gN5Y">Discord server</a> for updates
-            or just chat about life</p>
-        <p class="mb-0 font-weight-bold">Notice: inactive sessions will be deleted after 3 days.</p>
-        <p class="mb-3 font-weight-bold">Notice 2: Treat every session id like an isolated incognito browser that
-            belongs only to you. DO NOT SHARE THE SESSION ID. All logins that you make with the session id will be saved
-            in that session. Anyone that has your session id or session url CAN ACCESS your logged in sites.</p>
-        <p class="mb-3 font-weight-bold text-danger" id="error-text" style="display: none">Error: some text</p>
-        <div class="input-group mb-2" id="password-wrapper" style="display: none">
-            <div class="input-group-prepend">
-                <span class="input-group-text">Enter password</span>
-            </div>
-            <input type="password" class="form-control" id="session-password"
-                placeholder="Password is given by host of this site.">
-        </div>
-        <div class="input-group mb-2">
-            <div class="input-group-prepend">
-                <span class="input-group-text">Enter URL</span>
-            </div>
-            <input type="text" class="form-control" id="session-url" placeholder="https://www.google.com/">
-            <div class="input-group-append">
-                <button class="btn btn-success" id="session-go">Go!</button>
-            </div>
-        </div>
-        <div class="input-group mb-4">
-            <div class="input-group-prepend">
-                <span class="input-group-text">Session ID</span>
-            </div>
-            <input readonly type="text" class="form-control disable-text" id="session-id"
-                placeholder="click on 'Create new session ID' or 'Fill in existing session ID' from below">
-            <div class="input-group-append">
-                <button class="btn btn-secondary" id="session-create-btn" type="button">Create new session ID</button>
-            </div>
-        </div>
-        <button class="btn btn-outline-secondary" id="session-advanced-toggle">Show advanced options</button>
-        <div class="mt-2 mb-4" id="session-advanced-container" style="display: none">
-            <div class="form-check mb-1">
-                <input class="form-check-input" type="checkbox" value="" id="session-shuffling" checked>
-                <label class="form-check-label" for="session-shuffling">Enable URL Shuffling</label>
-            </div>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">HTTP Proxy</span>
-                </div>
-                <input type="text" class="form-control" id="session-httpproxy"
-                    placeholder="http://username:password@proxyipaddress:proxyport">
-            </div>
-        </div>
-    </div>
-    <div class="row justify-content-center m-0">
-        <table class="table w-75 table-striped table-bordered">
-            <thead>
-                <tr>
-                    <th>Session ID</th>
-                    <th>Created on</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-    </div>
-</body>
+  <div class="tab-container">
+    <div class="tab" onclick="openTab(event, 'tab1')">Tab 1</div>
+    <div class="tab" onclick="openTab(event, 'tab2')">Tab 2</div>
+    <div class="tab" onclick="openTab(event, 'tab3')">Tab 3</div>
+  </div>
 
+  <div id="tab1" class="tab-content">
+    <div class="searchbar">
+      <form onsubmit="search(event, 'tab1')">
+        <input tag="searchbar" id="searchbar-tab1" placeholder="Search the web freely" />
+      </form>
+    </div>
+    <div id="search-results-tab1"></div>
+  </div>
+
+  <div id="tab2" class="tab-content">
+    <div class="searchbar">
+      <form onsubmit="search(event, 'tab2')">
+        <input tag="searchbar" id="searchbar-tab2" placeholder="Search the web freely" />
+      </form>
+    </div>
+    <div id="search-results-tab2"></div>
+  </div>
+
+  <div id="tab3" class="tab-content">
+    <div class="searchbar">
+      <form onsubmit="search(event, 'tab3')">
+        <input tag="searchbar" id="searchbar-tab3" placeholder="Search the web freely" />
+      </form>
+    </div>
+    <div id="search-results-tab3"></div>
+  </div>
+
+  <script>
+    function openTab(event, tabName) {
+      // Hide all tab contents
+      const tabContents = document.getElementsByClassName("tab-content");
+      for (let i = 0; i < tabContents.length; i++) {
+        tabContents[i].style.display = "none";
+      }
+      
+      // Show the selected tab content
+      const selectedTab = document.getElementById(tabName);
+      selectedTab.style.display = "block";
+    }
+
+    function search(event, tabName) {
+      event.preventDefault();
+      const searchbar = document.getElementById(`searchbar-${tabName}`);
+      const searchResults = document.getElementById(`search-results-${tabName}`);
+      const searchQuery = searchbar.value;
+
+      // Perform your search logic here (e.g., API call, data processing)
+      // You can update the searchResults with the fetched or processed data
+      // For simplicity, let's just display the search query in the search results
+      searchResults.textContent = `Search results for "${searchQuery}"`;
+    }
+  </script>
+
+  <iframe src="/loading.html" id="iframeId" name="Iframe" scrolling="yes" allowfullscreen></iframe>
+</body>
 </html>
