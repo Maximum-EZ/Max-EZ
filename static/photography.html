@@ -4,27 +4,6 @@
   <title>Classes</title>
   <link rel="icon" type="image/x-icon" href="assets/images/branding/favicon/favicon.png">
   <link href="assets/css/photography.css" rel="stylesheet">
-  <style>
-    .searchbar {
-      position: fixed;
-      top: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 400px;
-      max-width: 90%;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      display: flex;
-    }
-
-    .searchbar input {
-      flex-grow: 1;
-      padding: 8px;
-      border: none;
-      font-size: 14px;
-    }
-  </style>
 </head>
 <body>
   <br>
@@ -36,7 +15,6 @@
       <input tag="searchbar" id="searchbar" placeholder="Search the web freely" />
     </form>
   </div>
-  
   <script src="./uv/uv.bundle.js"></script>
   <script src="./uv/uv.config.js"></script>
   <script src="assets/js/index.js"></script>
@@ -53,42 +31,14 @@
       }
     });
   </script>
-  
-  <img class="home-icon" src="/assets/images/icons/homeicon.svg" />
-  <img class="fullscreen-icon" src="/assets/images/icons/fullscreen.svg" />
-  <div class="controlpanel">
-    <div class="controls">
-      <img class="icon" src="/assets/images/branding/favicon/interstellar.ico" />
-      <form>
-        <input style="font-size: 24px" enabled="disabled" value="" />
-      </form>
-      <button class="button Fullscreen" id="fullscreen-button" style="margin-right: 5px">Fullscreen</button>
-      <button class="button Home" id="home-button">Home</button>
-    </div>
+  <div>
+    <button onclick="goToIndex()">Go Back</button>
   </div>
   
   <script>
-    const homeButton = document.getElementById("home-button");
-    homeButton.addEventListener("click", function() {
-      window.location.href = "./";
-    });
-
-    const fullscreenButton = document.getElementById("fullscreen-button");
-    fullscreenButton.addEventListener("click", function() {
-      if (!document.fullscreenElement) {
-        document.documentElement.requestFullscreen();
-      } else {
-        document.exitFullscreen();
-      }
-    });
+    function goToIndex() {
+      window.location.href = "./index.html";
+    }
   </script>
-  <script>
-    window.onload = function() {
-      let encodedUrl = sessionStorage.getItem("encodedUrl");
-      encodedUrl = "/service/" + encodedUrl;
-      document.querySelector("#iframeId").src = encodedUrl;
-    };
-  </script>
-  <iframe src="/loading.html" id="iframeId" name="Iframe" scrolling="yes" allowfullscreen></iframe>
 </body>
 </html>
