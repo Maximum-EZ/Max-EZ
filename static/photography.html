@@ -1,54 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Classes</title>
-    <meta
-      name="description"
-      content="Stay secure online with our powerful proxy service that safeguards your privacy and keeps you anonymous. Browse the web privately, shield your sensitive data from prying eyes, and access geo-restricted content effortlessly. Our reliable proxy solution ensures encrypted connections and seamless browsing, providing you with peace of mind and freedom online. Experience a safer and more unrestricted internet today!" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="assets/images/branding/favicon/favicon.png" />
-    <link href="assets/css/photography.css" rel="stylesheet" />
-    <script src="assets/js/main.js"></script>
-  </head>
-  <body>
-    <br />
-    <br />
-    <br />
-    <br />
-    <div class="searchbar">
-      <form>
-        <input
-          tag="searchbar"
-          id="searchbar"
-          placeholder="Search the web freely" />
-      </form>
-    </div>
-    <script src="./uv/uv.bundle.js"></script>
-    <script src="./uv/uv.config.js"></script>
-    <script src="assets/js/index.js"></script>
-    <script>
-      const searchbar = document.getElementById("searchbar");
+<head>
+  <title>Classes</title>
+  <meta name="description" content="Stay secure online with our powerful proxy service that safeguards your privacy and keeps you anonymous. Browse the web privately, shield your sensitive data from prying eyes, and access geo-restricted content effortlessly. Our reliable proxy solution ensures encrypted connections and seamless browsing, providing you with peace of mind and freedom online. Experience a safer and more unrestricted internet today!" />
+  <link rel="icon" type="image/x-icon" href="assets/images/branding/favicon/favicon.png" />
+  <link href="assets/css/photography.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="searchbar">
+    <form>
+      <input tag="searchbar" id="searchbar" placeholder="Search the web freely" />
+    </form>
+  </div>
 
-      searchbar.addEventListener("input", function () {
-        if (searchbar.value === "") {
-          searchbar.style.width = "25%";
-          searchbar.style.height = "60px";
-        } else {
-          searchbar.style.width = "70%";
-          searchbar.style.height = "60px";
-        }
-      });
-    </script>
-    <div>
-      <button class="button8" onclick="goToIndex()">Go Back</button>
-    </div>
+  <div>
+    <button class="button8" onclick="goToIndex()">Go Back</button>
+  </div>
 
-    <script>
-      function goToIndex() {
-        window.location.href = "./index.html";
+  <script src="./uv/uv.bundle.js" defer></script>
+  <script src="./uv/uv.config.js" defer></script>
+  <script src="assets/js/index.js" defer></script>
+  <script>
+    const searchbar = document.getElementById("searchbar");
+
+    searchbar.addEventListener("input", function () {
+      if (searchbar.value === "") {
+        searchbar.style.width = "25%";
+        searchbar.style.height = "60px";
+      } else {
+        searchbar.style.width = "70%";
+        searchbar.style.height = "60px";
       }
-    </script>
-  </body>
+    });
+
+    function goToIndex() {
+      window.location.href = "./index.html";
+    }
+  </script>
+</body>
 </html>
