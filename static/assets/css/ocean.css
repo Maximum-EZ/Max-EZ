@@ -35,6 +35,7 @@ img {
   cursor: pointer;
   height: 170px;
 }
+
 .game-img {
   width: 150px;
   height: 150px;
@@ -42,16 +43,16 @@ img {
   transition: 0.2s;
   cursor: pointer;
 }
+
 html {
-  margin-left: 25%;
-  margin-right: 25%;
-  text-align: center;
   margin: 20px 10px;
+  text-align: center;
+  margin: 20px;
   border-radius: 20px;
   font-weight: 700;
   border: 2px solid var(--textcolor);
   background: 0 0;
-  color: white; /* Updated color to white */
+  color: white;
   cursor: default;
   position: relative;
   overflow-y: scroll;
@@ -78,8 +79,6 @@ html {
 }
 
 button:hover {
-  -webkit-transition: scale(1.1);
-  -ms-transform: scale(1.2);
   transform: scale(1.2);
   transition: 1.5s ease;
   text-decoration: none;
@@ -87,7 +86,7 @@ button:hover {
 }
 
 h2 {
-  color: white; /* Updated color to white */
+  color: white;
   text-align: center;
   align-self: center;
   align-content: center;
@@ -97,6 +96,7 @@ h2 {
 body {
   background-color: black;
 }
+
 .random-btn {
   text-align: center;
   margin-top: 10px;
@@ -114,14 +114,12 @@ body {
   color: white;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
 }
 
 .random-btn:hover {
-  text-align: center;
   background-color: rgba(59, 56, 56, 0.356);
   color: rgba(0, 0, 0, 0.534);
-  scale: 1.1;
+  transform: scale(1.1);
 }
 
 #searchbar {
@@ -139,6 +137,7 @@ body {
   border: none;
   outline: none;
 }
+
 ::placeholder {
   color: white;
   opacity: 1;
