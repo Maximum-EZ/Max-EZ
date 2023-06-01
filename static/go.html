@@ -147,7 +147,7 @@
 </head>
 <body>
   <div class="search-bar">
-    <input id="search-input" type="text" placeholder="Search for a website">
+    <input tag="searchbar" id="searchbar" placeholder="Search the web freely" />
     <button id="search-button">Search</button>
   </div>
   
@@ -181,7 +181,7 @@
 
     const searchButton = document.getElementById("search-button");
     searchButton.addEventListener("click", function() {
-      const searchInput = document.getElementById("search-input");
+      const searchInput = document.getElementById("searchbar");
       const url = searchInput.value.trim();
 
       if (url !== "") {
