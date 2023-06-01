@@ -113,6 +113,20 @@
       border: none;
     }
   </style>
+</head>
+<body>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="searchbar">
+    <form onsubmit="loadWebsite(event)">
+      <input tag="searchbar" id="searchbar" placeholder="Search the web freely" />
+    </form>
+  </div>
+  <script src="./uv/uv.bundle.js"></script>
+  <script src="./uv/uv.config.js"></script>
+  <script src="assets/js/index.js"></script>
   <script>
     const searchbar = document.getElementById("searchbar");
 
@@ -125,11 +139,27 @@
         searchbar.style.height = "60px";
       }
     });
-
+  </script>
+  <div>
+    <button onclick="goToIndex()">Go Back</button>
+  </div>
+  
+  <script>
     function goToIndex() {
       window.location.href = "./index.html";
     }
-
+  </script>
+  <div class="controlpanel">
+    <div class="controls">
+      <img class="icon" src="/assets/images/branding/favicon/interstellar.ico" />
+      <form>
+        <input style="font-size: 24px" enabled="disabled" value="" />
+      </form>
+      <button class="button Fullscreen" id="fullscreen-button" style="margin-right: 5px">Fullscreen</button>
+      <button class="button Home" id="home-button">Home</button>
+    </div>
+  </div>
+  <script>
     const homeButton = document.getElementById("home-button");
     homeButton.addEventListener("click", function() {
       window.location.href = "./";
@@ -143,40 +173,21 @@
         document.exitFullscreen();
       }
     });
-
-    window.onload = function() {
-      let encodedUrl = sessionStorage.getItem("encodedUrl");
-      encodedUrl = "/service/" + encodedUrl;
-      document.querySelector("#iframeId").src = encodedUrl;
-    };
   </script>
-</head>
-<body>
-  <br>
-  <br>
-  <br>
-  <br>
-  <div class="searchbar">
-    <form>
-      <input tag="searchbar" id="searchbar" placeholder="Search the web freely" />
-    </form>
-  </div>
+  <script>
+    function loadWebsite(event) {
+      event.preventDefault(); // Prevent form submission
 
-  <div>
-    <button onclick="goToIndex()">Go Back</button>
-  </div>
+      const searchbar = document.getElementById("searchbar");
+      const url = searchbar.value;
 
-  <div class="controlpanel">
-    <div class="controls">
-      <img class="icon" src="/assets/images/branding/favicon/interstellar.ico" />
-      <form>
-        <input style="font-size: 24px" enabled="disabled" value="" />
-      </form>
-      <button class="button Fullscreen" id="fullscreen-button" style="margin-right: 5px">Fullscreen</button>
-      <button class="button Home" id="home-button">Home</button>
-    </div>
-  </div>
+      // Set the URL in the iframe
+      document.querySelector("#iframeId").src = url;
 
+      // Clear the searchbar
+      searchbar.value = "";
+    }
+  </script>
   <iframe src="/loading.html" id="iframeId" name="Iframe" scrolling="yes" allowfullscreen></iframe>
 </body>
 </html>
