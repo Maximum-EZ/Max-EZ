@@ -2,48 +2,70 @@
 <html lang="en">
   <head>
     <title>Classes</title>
-    <meta name="description" content="Stay secure online with our powerful proxy service that safeguards your privacy and keeps you anonymous. Browse the web privately, shield your sensitive data from prying eyes, and access geo-restricted content effortlessly. Our reliable proxy solution ensures encrypted connections and seamless browsing, providing you with peace of mind and freedom online. Experience a safer and more unrestricted internet today!">    <link href="assets/images/branding/favicon/favicon.png" rel="icon" type="image/x-icon" />
+    <meta
+      name="description"
+      content="Stay secure online with our powerful proxy service that safeguards your privacy and keeps you anonymous. Browse the web privately, shield your sensitive data from prying eyes, and access geo-restricted content effortlessly. Our reliable proxy solution ensures encrypted connections and seamless browsing, providing you with peace of mind and freedom online. Experience a safer and more unrestricted internet today!" />
+    <link
+      href="assets/images/branding/favicon/favicon.png"
+      rel="icon"
+      type="image/x-icon" />
     <script src="assets/js/main.js"></script>
-    
+
     <script src="assets/js/index.js"></script>
     <script src="./uv/uv.bundle.js"></script>
     <script src="./uv/uv.config.js"></script>
     <script src="assets/js/visit.js"></script>
     <script src="assets/js/go.js"></script>
     <script src="assets/js/search.js"></script>
-    
-    <link href="assets/css/ocean.css" rel="stylesheet">
-    
+
+    <link href="assets/css/ocean.css" rel="stylesheet" />
+
     <meta content="The best math tutoring!" name="description" />
-    
-    <link href="assets/images/branding/favicon/interstellar.png" rel="shortcut icon" type="image/x-icon" />
+
+    <link
+      href="assets/images/branding/favicon/interstellar.png"
+      rel="shortcut icon"
+      type="image/x-icon" />
 
     <!-- Google AdSense code -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8732115884229930" crossorigin="anonymous"></script>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-  
-  <!-- Google Tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0WQEDRBMS"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-H0WQEDRBMS');
-  </script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8732115884229930"
+      crossorigin="anonymous"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <!-- Google Tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-H0WQEDRBMS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-H0WQEDRBMS");
+    </script>
   </head>
-  
+
   <body>
-    
-    <br>
+    <br />
     <div>
-      <input class="searchbar" id="searchbar" name="search" onkeyup="search_animal()" placeholder="Search.." tag="searchbar" type="text" />
+      <input
+        class="searchbar"
+        id="searchbar"
+        name="search"
+        onkeyup="search_animal()"
+        placeholder="Search.."
+        tag="searchbar"
+        type="text" />
     </div>
     <script>
       const searchbar = document.getElementById("searchbar");
-      searchbar.addEventListener("input", function() {
-        if (searchbar.value === '') {
+      searchbar.addEventListener("input", function () {
+        if (searchbar.value === "") {
           searchbar.style.width = "25%";
           searchbar.style.height = "60px";
         } else {
@@ -52,13 +74,16 @@
         }
       });
     </script>
-   
-   <br>
+
+    <br />
     <div class="row">
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://amazon.com/'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/amazon.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/amazon.png"
+              style="border-radius: 25px" />
           </a>
           <p3> Amazon </p3>
         </div>
@@ -68,7 +93,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a onclick="go('https://chess.com'); msg()">
-            <img loading="lazy" src="/assets/images/icons/chess.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/chess.png"
+              style="border-radius: 25px" />
           </a>
           <p3> Chess.com </p3>
         </div>
@@ -78,7 +106,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a onclick="go('https://chatgptproxy.me'); msg()">
-            <img loading="lazy" src="/assets/images/icons/chatgpt.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/chatgpt.png"
+              style="border-radius: 25px" />
           </a>
           <p3>ChatGPT</p3>
         </div>
@@ -88,7 +119,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://www.coolmathgames.com/'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/coolmath.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/coolmath.png"
+              style="border-radius: 25px" />
           </a>
           <p3> Cool Math Games </p3>
         </div>
@@ -98,7 +132,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://discord.com'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/discord.jpg" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/discord.jpg"
+              style="border-radius: 25px" />
           </a>
           <p3>Discord</p3>
         </div>
@@ -108,7 +145,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="visit('https://discord.com'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/discord.jpg" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/discord.jpg"
+              style="border-radius: 25px" />
           </a>
           <p3>Discord - Login</p3>
         </div>
@@ -118,7 +158,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://www.espn.com/watch/'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/espn.webp" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/espn.webp"
+              style="border-radius: 25px" />
           </a>
           <p3> ESPN </p3>
         </div>
@@ -128,7 +171,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://now.gg'); msg(); nwgg()">
-            <img loading="lazy" src="/assets/images/icons/apps/now-gg.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/now-gg.png"
+              style="border-radius: 25px" />
           </a>
           <p3> now.gg - Roblox </p3>
         </div>
@@ -137,8 +183,13 @@
     <div class="row">
       <div class="span1">
         <div class="card animals" loading="lazy">
-          <a class="game" onclick="go('https://replit.com/@cooleddie001/firefox?embed=true'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/firefox.png" style="border-radius: 25px;" />
+          <a
+            class="game"
+            onclick="go('https://replit.com/@cooleddie001/firefox?embed=true'); msg()">
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/firefox.png"
+              style="border-radius: 25px" />
           </a>
           <p3> Firefox Brower </p3>
         </div>
@@ -148,7 +199,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://flixhq.to'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/flixhq.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/flixhq.png"
+              style="border-radius: 25px" />
           </a>
           <p3> Flix HQ </p3>
         </div>
@@ -157,8 +211,13 @@
     <div class="row">
       <div class="span1">
         <div class="card animals" loading="lazy">
-          <a class="game" onclick="go('https://play.geforcenow.com'); msg(); gfn()">
-            <img loading="lazy" src="/assets/images/icons/apps/geforce-now.png" style="border-radius: 25px;" />
+          <a
+            class="game"
+            onclick="go('https://play.geforcenow.com'); msg(); gfn()">
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/geforce-now.png"
+              style="border-radius: 25px" />
           </a>
           <p3> Geforce NOW </p3>
         </div>
@@ -168,7 +227,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://github.com/'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/github.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/github.png"
+              style="border-radius: 25px" />
           </a>
           <p3> Github </p3>
         </div>
@@ -178,7 +240,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://google.com'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/google.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/google.png"
+              style="border-radius: 25px" />
           </a>
           <p3> Google </p3>
         </div>
@@ -188,7 +253,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://www.hbomax.com/'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/hbo.webp" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/hbo.webp"
+              style="border-radius: 25px" />
           </a>
           <p3> HBO Max </p3>
         </div>
@@ -197,10 +265,15 @@
     <div class="row">
       <div class="span1">
         <div class="card animals" loading="lazy">
-          <a class="game" onclick="go('https://www.instagram.com/'); msg(); nsta()">
-            <img loading="lazy" src="/assets/images/icons/apps/instagram.png" style="border-radius: 25px;" />
+          <a
+            class="game"
+            onclick="go('https://www.instagram.com/'); msg(); nsta()">
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/instagram.png"
+              style="border-radius: 25px" />
           </a>
-          <p3 style="color:red"> Instagram </p3>
+          <p3 style="color: red"> Instagram </p3>
         </div>
       </div>
     </div>
@@ -208,7 +281,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://messenger.com/'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/messenger.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/messenger.png"
+              style="border-radius: 25px" />
           </a>
           <p3> Messenger </p3>
         </div>
@@ -218,7 +294,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://paramountplus.com'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/paramount.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/paramount.png"
+              style="border-radius: 25px" />
           </a>
           <p3> Paramount Plus </p3>
         </div>
@@ -228,7 +307,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://pinterest.com'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/pinterest.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/pinterest.png"
+              style="border-radius: 25px" />
           </a>
           <p3> Pinterest </p3>
         </div>
@@ -238,7 +320,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://pixlr.com/'); msg()">
-            <img loading="lazy" src="/assets/images/icons/pix.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/pix.png"
+              style="border-radius: 25px" />
           </a>
           <p3> Pixlr </p3>
         </div>
@@ -248,7 +333,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://poki.com'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/poki.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/poki.png"
+              style="border-radius: 25px" />
           </a>
           <p3> Poki </p3>
         </div>
@@ -258,7 +346,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://reddit.com'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/reddit.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/reddit.png"
+              style="border-radius: 25px" />
           </a>
           <p3> Reddit </p3>
         </div>
@@ -268,7 +359,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://nowgg.me'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/snapchat.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/snapchat.png"
+              style="border-radius: 25px" />
           </a>
           <p3> Snapchat </p3>
         </div>
@@ -278,7 +372,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://soundcloud.com'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/soundcloud.jpg" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/soundcloud.jpg"
+              style="border-radius: 25px" />
           </a>
           <p3> Soundcloud </p3>
         </div>
@@ -288,7 +385,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://open.spotify.com'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/spotify.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/spotify.png"
+              style="border-radius: 25px" />
           </a>
           <p3> Spotify </p3>
         </div>
@@ -298,7 +398,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://web.telegram.org/'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/telegram.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/telegram.png"
+              style="border-radius: 25px" />
           </a>
           <p3> Telegram </p3>
         </div>
@@ -308,7 +411,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://tiktok.com'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/tiktok.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/tiktok.png"
+              style="border-radius: 25px" />
           </a>
           <p3> Tiktok </p3>
         </div>
@@ -318,7 +424,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://tumblr.com/'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/tumblr.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/tumblr.png"
+              style="border-radius: 25px" />
           </a>
           <p3> Tumblr </p3>
         </div>
@@ -328,7 +437,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://twitch.tv'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/twitch-tv.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/twitch-tv.png"
+              style="border-radius: 25px" />
           </a>
           <p3> Twitch </p3>
         </div>
@@ -338,7 +450,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://twitter.com'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/twitter.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/twitter.png"
+              style="border-radius: 25px" />
           </a>
           <p3> Twitter </p3>
         </div>
@@ -348,7 +463,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://vscode.dev'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/vscode.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/vscode.png"
+              style="border-radius: 25px" />
           </a>
           <p3> VS Code </p3>
         </div>
@@ -358,7 +476,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://y8.com/'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/y8.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/y8.png"
+              style="border-radius: 25px" />
           </a>
           <p3> Y8 Games </p3>
         </div>
@@ -368,7 +489,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://youtube.com'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/yt.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/yt.png"
+              style="border-radius: 25px" />
           </a>
           <p3> YouTube </p3>
         </div>
@@ -378,7 +502,10 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://web.whatsapp.com/'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/whatsapp.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/whatsapp.png"
+              style="border-radius: 25px" />
           </a>
           <p3> Whatsapp </p3>
         </div>
@@ -388,27 +515,36 @@
       <div class="span1">
         <div class="card animals" loading="lazy">
           <a class="game" onclick="go('https://zoro.to'); msg()">
-            <img loading="lazy" src="/assets/images/icons/apps/zoroto.png" style="border-radius: 25px;" />
+            <img
+              loading="lazy"
+              src="/assets/images/icons/apps/zoroto.png"
+              style="border-radius: 25px" />
           </a>
           <p3> Zoro.to </p3>
         </div>
       </div>
     </div>
-    <br>
-    <br>
+    <br />
+    <br />
     <script>
       function gfn() {
-        alert('Geforce NOW may have problems connecting to your Steam or Epic Games account. If you have a Geforce NOW account already connected to those services, it will work')
+        alert(
+          "Geforce NOW may have problems connecting to your Steam or Epic Games account. If you have a Geforce NOW account already connected to those services, it will work"
+        );
       }
       function nwgg() {
-        alert('Now.GG is currently having some issues. Reason: Proxy Detected')
-      }  
+        alert("Now.GG is currently having some issues. Reason: Proxy Detected");
+      }
       function nsta() {
-        alert('It is currently not possible to use Instagram. Reason: Login Feature Not Working')
-      }  
+        alert(
+          "It is currently not possible to use Instagram. Reason: Login Feature Not Working"
+        );
+      }
       function msg() {
-        alert('At this moment, our servers are experiencing technical difficulties. We would like to express our sincerest apologies for any inconvenience this may have caused.')
-      }  
+        alert(
+          "At this moment, our servers are experiencing technical difficulties. We would like to express our sincerest apologies for any inconvenience this may have caused."
+        );
+      }
     </script>
   </body>
 </html>
