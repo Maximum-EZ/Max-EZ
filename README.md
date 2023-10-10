@@ -1,2 +1,2 @@
 # Max-EZ
-Better Interstellar lol. Im not joking I will beat them.
+Better than the Interstellar proxy lol. I'm not joking I will beat them.
