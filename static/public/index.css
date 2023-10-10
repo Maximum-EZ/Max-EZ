@@ -567,7 +567,7 @@ html {
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
   padding: 0.5rem;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -900,7 +900,7 @@ html {
 
 .bg-orange-400 {
   --tw-bg-opacity: 1;
-  background-color: rgb(251 146 60 / var(--tw-bg-opacity));
+  background-color: rgb(128 0 32 / var(--tw-bg-opacity));
 }
 
 .bg-primary {
