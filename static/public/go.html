@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      iframe {
+        color: #374151;
+      }
+
+      body {
+        background-color: #1c1c1c;
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+      }
+
+      a:hover {
+        color: #3498db;
+      }
+
+      #loader {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        border: 16px solid #f3f3f3;
+        border-top: 16px solid #3498db;
+        border-radius: 50%;
+        animation: spin 2s linear infinite;
+        margin-bottom: 35px;
+      }
+
+      #back-button {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1000000; /* Ensure it appears above the iframe */
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .message {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .description {
+        color: #fff;
+        font-size: 20px;
+        line-height: 1.5;
+        max-width: 600px;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .discord-link {
+        color: #3498db;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+
+      .animate-bottom {
+        animation-name: animatebottom;
+        animation-duration: 1s;
+      }
+
+      @keyframes animatebottom {
+        from {
+          bottom: -100px;
+          opacity: 0;
+        }
+
+        to {
+          bottom: 0;
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button id="back-button" onclick="location.href = 'index.html' ">Go Back</button>
+    <div id="loader"></div>
+    <div class="message animate-bottom">
+      <!-- Your existing message content -->
+    </div>
+
+    <iframe
+      id="iframeId"
+      style="
+        position: fixed;
+        top: 0px;
+        color: #1c1c1c;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 100%;
+        border: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        z-index: 999999;
+      "
+      onload="hideLoader()">
+      Your browser doesn't support iframes
+    </iframe>
+
+    <script>
+      window.onload = function () {
+        let url = sessionStorage.getItem("url");
+        document.getElementById("iframeId").src = url;
+      };
+
+      // Function to hide the loader
+      function hideLoader() {
+        document.getElementById("loader").style.display = "none";
+        document.querySelector(".message").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
